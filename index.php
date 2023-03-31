@@ -21,7 +21,7 @@
             
             <div id="area-logo">
               <h1 class="logo">
-                <a href="index.html">Chalé Hotel</a>
+                <a href="index.php">Chalé Hotel</a>
               </h1>
             </div>
 
@@ -32,7 +32,7 @@
                   <span class="locais">
                     Chalé Hotel - Olinda
                   </span>
-                  <a class="reserva" href="login.html">Login</a>
+                  <a class="reserva" href="login.php">Login</a>
                   <div style="clear: both;"></div>
                 </div>
 
@@ -126,7 +126,7 @@
           
           <script>
             function irParaReserva() {
-              window.location.href = "reserva.html";
+              window.location.href = "reserva.php";
             }
           </script>
           
