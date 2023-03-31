@@ -1,0 +1,792 @@
+        body {
+            background-color: #fdf6be;
+            position: relative;
+            overflow-x: hidden; /* Hide horizontal scrollbar */
+            overflow-y: scroll; /* Add vertical scrollbar */
+        }
+
+        
+        body::before {
+            content: "";
+            background: url(imagens/quarto.jpg) repeat;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.1;
+            z-index: -1;
+        }
+         
+        
+        #carouselExampleIndicators {
+            margin-top: 10px;
+            margin-bottom: 0;
+            margin-right: 10px;
+            background-color: #dbcd87;
+            display: flex;
+            width: 100%;
+            height: 100%;
+            position: static;
+          }
+          /* Para telas pequenas */
+        @media screen and (max-width: 767px) {
+            #carouselExampleIndicators {
+                margin-top: 0px;
+                margin-bottom: 0;
+                background-color: #dbcd87;
+                overflow: auto;
+                width: auto;
+                height: auto;
+                position: relative;
+              }
+        }
+        /* Para telas médias */
+        @media screen and (min-width: 768px) and (max-width: 1023px) {
+            #carouselExampleIndicators {
+                margin-top: 0px;
+                margin-bottom: 0;
+                margin-right: 10px;
+                background-color: #dbcd87;
+                overflow: auto;
+                width: auto;
+                height: auto;
+                position: relative;
+              }
+        }
+        .carrossel2{
+            position: relative;
+        }
+        
+          
+          
+        /* Topo da página */
+        #topo {
+            position: relative;
+            background: #dbcd87;
+            height: 15.4em;
+            min-height: 250px;
+        }
+        
+        #area-logo {
+            position: absolute;
+            background: url(imagens/topo-imagem-principal3.png) no-repeat;
+            width: 100%;
+            height: 250px;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+        
+        .logo a {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            z-index: 3;
+            background: url(imagens/logo.png) no-repeat;
+            width: 151px;
+            height: 66px;
+            text-indent: -9000px;
+        }
+        
+        #area-menu {
+            position: absolute;
+            top: 0;
+            right: 0;
+            background: url(imagens/topo-imagem-lateral.png) no-repeat; ;
+            width: 450px;
+            height: 250px;
+            z-index: 2;
+        }
+        
+        #conteudo-menu {
+            margin-left: 90px;
+            margin-right: 15px;
+            padding-top: 15px;
+        }
+        
+        #menu-locais {
+            border-bottom: 1px solid #b5ab56;
+            border-top: 1px solid #b5ab56;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            font-size: 0.7em;
+            color: #8b8448;
+        }
+        
+        #menu-locais .locais {
+            float: left;
+            line-height: 2.1em;
+        }
+        
+        a {
+            text-decoration: none;
+            color: #6e672c;
+        }
+        
+        p {
+            font-size: 1.2em;
+        }
+        .texto-login{
+            font-size: 12px;
+        }
+        .texto-historia{
+            margin-top: 150px;
+            margin-left: 100px;
+            margin-right: 50px;
+            text-align: center;
+
+        }
+          /* Para telas pequenas */
+          @media screen and (max-width: 767px) {
+            .texto-historia{
+                margin-top: 50px;
+                margin-left: 50px;
+                margin-right: 50px;
+                text-align: justify;
+                font-size: 1em;
+    
+            }
+        }
+        .historia{
+            margin: 0px auto 100px auto;
+            font-size: 2em;
+            font-family:sans-serif;
+            text-align: center;
+            text-transform: uppercase;
+            color:#6e672c;
+        }
+        #img-historia{
+            margin: 42px 50px 0 0;
+        }
+          /* Para telas pequenas */
+          @media screen and (max-width: 767px) {
+            #img-historia{
+                margin: 20px 50px 20px 50px;
+            }
+        }
+        
+        a.reserva {
+            text-transform: uppercase;
+            background: #a29750;
+            color: #fff5b0;
+            padding: 5px 10px;
+            float: right;
+        }
+        a.reserva:hover {
+            text-transform: uppercase;
+            background: #b5ab56;
+            color: #fff5b0;
+            padding: 5px 10px;
+            float: right;
+        }
+        
+        /* Barra de navegação vertical */
+        #menu {
+            margin-top: 15px;
+        }
+        
+        ul {
+            list-style: none;
+        }
+        
+        ul#navegacao {
+            float: left;
+        }
+        
+        ul#navegacao a {
+            text-transform: uppercase;
+            font-size: 0.8em;
+            padding: 5px;
+            color: #6e672c;
+            line-height: 30px;
+        }
+        
+        ul#navegacao a:hover {
+            color: #fdf6be;
+        }
+        
+
+        /* Configuração dos cards principais para os diferentes tamanhos de telas */
+        
+        @media screen and (min-width: 1200px) {
+            .container-cards {
+                margin: 0;
+            }
+          }
+        @media screen and (min-width: 1024px) {
+            .container-cards {
+                margin: 0;
+            }
+          }
+        @media screen and (min-width: 768px) {
+            .container-cards {
+                margin:0 30px 0 30px;
+                padding-left: 0px;
+                padding-right: 0px;
+            }
+        
+          }
+          
+          @media screen and (max-width: 767px) {
+            .container-cards {
+              margin: 0;
+            }
+            
+          }
+
+
+
+        /* Configuração dos cards pacotes para os diferentes tamanhos de telas */
+
+        @media screen and (min-width: 1200px) {
+            .container-pacotes {
+                margin: 0;
+            }
+            h2 {
+                font-size: 2em;
+            }
+          }
+        @media screen and (min-width: 1024px) {
+            .container-pacotes {
+                margin: 0;
+            }
+            h2 {
+                font-size: 1.8em;
+            }
+          }
+        @media screen and (min-width: 768px) {
+            .container-pacotes {
+                margin: 0;
+                
+            }
+            h2 {
+                font-size: 1.2em;
+            }
+            p {
+                font-size: 0.6em;
+            }
+            
+          }
+          
+          @media screen and (max-width: 767px) {
+            .container-pacotes {
+              margin: 0;
+            }
+            p{
+                font-size: 1em;
+            }
+
+          }
+
+
+        /* Tamanho padrão da fonte */
+        p {
+            font-size: 1em;
+        }
+        
+        
+        
+        /* Para telas médias */
+        @media screen and (min-width: 768px) and (max-width: 1023px) {
+            p {
+            font-size: 0.8em;
+            }
+        }
+        
+        /* Para telas grandes */
+        @media screen and (min-width: 1024px) {
+            p {
+            font-size: 1em;
+            }
+        }
+  
+          
+        .container2{
+            background-color: #dbcd87;
+        }
+        .frente{
+            margin-bottom: 150px;
+            width: 100%;
+            
+        }
+        /* Para telas médias */
+        @media screen and (min-width: 768px) and (max-width: 1023px) {
+            .frente{
+                margin-top: 100px;
+                margin-bottom: 20px;
+                overflow-y: hidden;
+            }
+        }
+        
+        
+        .comidas{
+            margin-bottom: 10px;
+        }
+
+
+        /* Configuração de textos */
+        h1{
+            margin: 0px auto 100px auto;
+            font-size: 2em;
+            font-family:sans-serif;
+            text-align: center;
+            text-transform: uppercase;
+            color:#6e672c;
+        }
+        .texto{
+            font-size: 1.2em;
+            color: #6e672c;
+            text-transform: uppercase;
+            margin-top: 200px;
+
+            
+        }
+        /* Para telas médias */
+        @media screen and (min-width: 768px) and (max-width: 1023px) {
+            .texto{
+                font-size: 1.2em;
+                color: #6e672c;
+                text-transform: uppercase;
+                margin-top: 50px;
+                
+            }
+        }
+        /* Para telas pequenas */
+        @media screen and (max-width: 767px) {
+            .texto{
+                font-size: 1.2em;
+                color: #6e672c;
+                text-transform: uppercase;
+                margin-top: 30px;
+                
+            }
+        }
+        .principal{
+            color:#6e672c;
+            margin-top: 50px;
+            margin-left: 50px;
+        }
+        /* Para telas pequenas */
+        @media screen and (max-width: 767px) {
+            .principal{
+                color:#6e672c;
+                margin-top: 50px;
+                margin-left: 20px;
+                margin-right: 20px;
+                font-size: 0.8em;
+            }
+        }
+        /* Para telas médias */
+        @media screen and (min-width: 768px) and (max-width: 1023px) {
+            .principal{
+                color:#6e672c;
+                margin-top: 0px;
+                margin-left: 20px;
+                margin-right: 20px;
+                font-size: 0.8em;
+            }
+        }
+        
+        
+        /* Para telas pequenas */
+        @media screen and (max-width: 767px) {
+            .texto-gastronomia-direita{
+                color:#6e672c;
+                margin-top: 10px;
+                margin-left: 35px;
+                margin-right: 35px;
+                
+            }
+        }
+        
+        /* Para telas médias */
+        @media screen and (min-width: 768px) and (max-width: 1023px) {
+            .texto-gastronomia-direita{
+                color:#6e672c;
+                margin-top: 10px;
+                margin-right: 20px;
+            }
+        }
+        
+        /* Para telas grandes */
+        @media screen and (min-width: 1024px) {
+            .texto-gastronomia-direita{
+                color:#6e672c;
+                margin-top: 30px;
+                margin-right: 200px;
+            }
+        }
+        
+
+        /* Para telas pequenas */
+        @media screen and (max-width: 767px) {
+            .texto-gastronomia-esquerda{
+                color:#6e672c;
+                margin-top: 10px;
+                margin-left: 35px;
+                margin-right: 35px;
+            }
+        }
+        
+        /* Para telas médias */
+        @media screen and (min-width: 768px) and (max-width: 1023px) {
+            .texto-gastronomia-esquerda{
+                color:#6e672c;
+                margin-top: 10px;
+                margin-left: 20px;
+            }
+        }
+        
+        /* Para telas grandes */
+        @media screen and (min-width: 1024px) {
+            .texto-gastronomia-esquerda{
+                color:#6e672c;
+                margin-top: 30px;
+                margin-left: 200px;
+            }
+        }
+
+       
+
+
+        .cor{
+            background-color: #6e672c;
+            color: #fff5b0;
+        }
+        
+
+        /* Estilo para as imagens dos lugares */
+        img {
+            max-width: 100%;
+            padding: 16px;
+        }
+
+        /* Sessão de login */
+        
+        .login{
+            background-color: #dbcd87;
+            width: 450px;
+            margin-top: 50px;
+            margin-bottom: 30px;
+            border-radius: 5px;
+        }
+        .login form {
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 0;
+            border-radius: 5px;
+        }
+        
+        .login form .form-control {
+            border-radius: 0;
+        }
+        
+        .login form button {
+            border-radius: 0;
+            margin-bottom: 30px;
+            background-color: #8b8448;
+            color: #dbcd87;
+        }
+        
+        .login form button:hover {
+            background-color: #b5ab56;
+            
+        }
+        #botao-login{
+            color: #fff5b0;
+            text-decoration: none;
+        }
+        #botao-login:hover{
+            background-color: #8b8448;
+            color: #fff5b0;
+            text-decoration: none;
+        }
+
+        .login p {
+            text-align: center;
+        }
+        .formas-login{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 0px;
+        }
+        /* fim de login */
+               
+        .btn-reserva {
+            background-color: #6e672c;
+            color: #fff5b0;
+            text-transform: uppercase;
+            margin-bottom: 250px;
+            position: relative;
+            border: none;
+            z-index: 1;
+            border-radius: 0;
+            padding: 12px 32px;
+          }
+          
+            
+        .btn-reserva:hover{
+            background: #a29750;
+            color: #fff5b0;
+            transform: scale(1.1);
+            transition: all 0.3s ease-in-out;
+            box-shadow: none;
+        }
+        /* Para telas pequenas */
+        @media screen and (max-width: 767px) {
+            .btn-reserva {
+                background-color: #6e672c;
+                color: #fff5b0;
+                text-transform: uppercase;
+                margin-bottom: 50px;
+                position: relative;
+                border: none;
+                z-index: 1;
+                border-radius: 0;
+                padding: 12px 32px;
+              }
+              /* Para telas médias */
+        @media screen and (min-width: 768px) and (max-width: 1023px) {
+            .btn-reserva {
+                background-color: #6e672c;
+                color: #fff5b0;
+                text-transform: uppercase;
+                position: relative;
+                border: none;
+                z-index: 1;
+                border-radius: 0;
+                padding: 12px 32px;
+                margin-bottom: 20px;
+              }
+        }
+        }
+        .btn-disponibilidade{
+            background-color: #6e672c;
+            color: #fff5b0;
+            text-transform: uppercase;
+            border-radius: 0;
+            border: none;
+            margin-left: 15px;
+            padding: 7px 10px 7px 10px;
+        }
+        .campos-form{
+            border-radius: 0;
+        }
+        .slides{
+            z-index: 0;
+            position: absolute;
+            width: 100%;
+            height: 250px;
+            top: 0;
+            left: 0;
+        }
+   
+        /* Estilo dos cards */
+        .card {
+            margin: 16px auto;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            align-items: center;
+            max-width: 400px;
+        }
+        
+        .cartoes {
+            margin: 16px auto;
+        }
+
+        .card:hover {
+            transform: scale(1.1);
+            transition: all 0.3s ease-in-out;
+        }
+        
+        .card:not(:hover) {
+            transition: all 0.3s ease-in-out;
+        }
+
+        /* Google Maps */
+        .mapa {
+            margin-top: 50px;
+            margin-bottom: 50px;
+          }
+
+          hr{
+            border-color:#dbcd87;
+            box-sizing:border-box;
+            width:100%;  
+          }
+
+          
+
+
+          /* Para telas pequenas */
+        @media screen and (max-width: 767px) {
+            .imagem-gastronomia-direita{
+                margin-left: 50px;
+                margin-right: 50px;
+                padding: 10px;
+                background-color: #a29750;
+              }
+        }
+        
+        /* Para telas médias */
+        @media screen and (min-width: 768px) and (max-width: 1023px) {
+            .imagem-gastronomia-direita{
+                margin-right: 20px;
+                padding: 10px;
+                background-color: #dbcd87;
+              }
+        }
+        
+        /* Para telas grandes */
+        @media screen and (min-width: 1024px) {
+            .imagem-gastronomia-direita{
+                margin-right: 200px;
+                background-color: #dbcd87;
+                padding: 10px;
+              }
+        }
+
+
+          
+
+
+            /* Para telas pequenas */
+        @media screen and (max-width: 767px) {
+            .imagem-gastronomia-esquerda{
+                margin-left: 50px;
+                margin-right: 50px;
+                background-color:#dbcd87;
+              }
+        }
+        
+        /* Para telas médias */
+        @media screen and (min-width: 768px) and (max-width: 1023px) {
+            .imagem-gastronomia-esquerda{
+                margin-left: 20px;
+                background-color:#dbcd87;
+              }
+        }
+        
+        /* Para telas grandes */
+        @media screen and (min-width: 1024px) {
+            .imagem-gastronomia-esquerda{
+                margin-left: 200px;
+                background-color:#dbcd87;
+              }
+        }
+
+        @media (max-width: 767px) {
+            .comida-vegana {
+              flex-direction: column-reverse;
+            }
+          }
+          
+          .imagem-gastronomia-esquerda,
+          .texto-gastronomia-direita {
+            padding: 10px;
+          }
+          
+          .imagem-gastronomia-esquerda img {
+            width: 100%;
+            height: auto;
+          }
+          
+          .texto-gastronomia-direita h3 {
+            font-size: 24px;
+            margin-bottom: 20px;
+          }
+          
+          .texto-gastronomia-direita p {
+            font-size: 18px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+          }
+          
+
+
+          /* Footer */
+
+          footer {
+            background-color: #6e672c;
+            bottom: 0;
+            width: 100%;
+          }
+
+          body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+          }
+          
+          
+          .redes-sociais {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+          }
+          
+          .social-icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #dbcd87;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-right: 10px;
+          }
+          
+          .social-icon i {
+            color: #6e672c;
+            font-size: 20px;
+          }
+          .texto-footer{
+            color: #dbcd87;
+          }
+
+        @media screen and (min-width: 1200px) {
+            .corpo {
+                margin:0 150px 0 150px;
+            }
+          }
+          @media screen and (min-width: 1024px) {
+            .corpo {
+                margin:0 50px 0 50px;
+            }
+          }
+
+
+
+           /* Formulário de Check-in */
+          .container {
+			margin-top: 50px;
+		}
+		.form-inline label {
+			margin-right: 10px;
+		}
+        .servicos-exclusivos{
+            margin-top: 50px;
+        }
+        .icones{
+            color: #6e672c;
+            margin-bottom: 125px;
+        }
+          
+
+
+          
+
+          
+          
+
+
+
+
+
+
+
+        
