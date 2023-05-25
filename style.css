@@ -61,6 +61,31 @@
           
           
         /* Topo da página */
+
+        .navbar-logo {
+            max-width: 100px; /* Ajuste o tamanho da logo conforme necessário */
+          }
+        .cor-menu{
+            background-color: #dbcd87;
+        }
+             
+           
+        .navbar-brand {
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 150px;
+            height: 50px;
+          }
+          #navbar_cadastro {
+            background-color: #b5ab56;
+          }
+          
+          .navbar-nav .nav-link {
+            color: #6e672c;
+          }
+          .navbar-nav .nav-link:hover{
+            color: #fff5b0;
+          }
         #topo {
             position: relative;
             background: #dbcd87;

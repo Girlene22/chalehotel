@@ -1,123 +1,164 @@
-
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Catálogo de lugares para passeio</title>
+    <title>Cadastro</title>
     <!-- Adiciona o link para o arquivo CSS do Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-    <!-- Adiciona o caminho para o arquivo CSS  -->
+    <!-- Adiciona o caminho para o arquivo CSS -->
     <link rel="stylesheet" href="style.css">
-     <!-- Adiciona o caminho para a biblioteca do Font Awesome  -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"  />
-    
-
+    <!-- Adiciona o caminho para a biblioteca do Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"  />
   </head>
   <body>
-          <!-- inicio topo-->
-          <div id="topo">
-            
-            <div id="area-logo">
-              <h1 class="logo">
-                <a href="index.html">Chalé Hotel</a>
-              </h1>
-            </div>
-
-            <div id="area-menu">
-              <div id="conteudo-menu">
-                
-                <div id="menu-locais">
-                  <span class="locais">
-                    Chalé Hotel - Olinda
-                  </span>
-                  <a class="reserva" href="login.html">Login</a>
-                  <div style="clear: both;"></div>
-                </div>
-
-                <div id="menu">
-                  <ul id="navegacao">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">História</a></li>
-                    <li><a href="">Imprensa</a></li>
-                    <li><a href="">Gastronomia</a></li>
-                    <li><a href="">Contato</a></li>
-                  </ul>
-
-                </div>
-
-              </div>
-            </div>
-          </div>
-          <!-- fim topo-->
-
-          <div class="d-flex justify-content-center">
-            <div class="login">
-              <form>
-                <div class="form-group">
-                    <label for="nome">Nome</label>
-                    <input type="text" class="form-control" id="nome" placeholder="Digite seu nome">
-                  </div>
-                  <div class="form-group">
-                    <label for="telefone">Telefone</label>
-                    <input type="text" class="form-control" id="telefone" placeholder="Digite seu telefone">
-                  </div>
-                <div class="form-group">
-                  <label for="email">E-mail</label>
-                  <input type="email" class="form-control" id="email" placeholder="Digite seu e-mail">
-                </div>
-                <div class="form-group">
-                    <label for="email">Confirme seu E-mail</label>
-                    <input type="email" class="form-control" id="confirmaemail" placeholder="Digite seu e-mail">
-                  </div>
-                <div class="form-group">
-                  <label for="senha">Senha</label>
-                  <input type="password" class="form-control" id="senha" placeholder="Digite sua senha">
-                </div>
-                <div class="form-group">
-                    <label for="senha">Confirme sua Senha</label>
-                    <input type="password" class="form-control" id="confirmasenha" placeholder="Digite sua senha">
-                  </div>
-                <div class="text-center">
-                  <button type="submit" class="btn"><a href="index.html">Continuar</a></button>
-                </div>
-                <p>Ao iniciar sessão numa conta, concorda com os nossos Termos e Condições e com a Declaração de Privacidade.</p>
-              </form>
-            </div>
-          </div>
-          
-        
-
-          <!-- início footer-->
-          <footer>
-            <div class="container">
-              <div class="redes-sociais">
-                <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
-                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-                
-              </div>
-              <div class="row">
-                <div class="col-12">
-                  <p class="text-center texto-footer">&copy; 2023 Chalé Hotel. Todos os direitos reservados.</p>
-                </div>
-              </div>
-            </div>
-          </footer>
-          
-          
-          
-          <!-- fim footer-->
-
+    
   
+   <!-- ... Início Menu ... -->
+<nav class="navbar navbar-expand-md cor-menu">
+  <a class="navbar-brand" href="#"><img src="imagens/logo.png" alt="Logo" class="navbar-logo"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">História</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Gastronomia</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Mais Informações</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contato</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<!-- ... Fim Menu ... -->
 
-  <!-- Adicionando o jQuery e o JavaScript do Bootstrap -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 
-  <!-- Adiciona o link para o arquivo JavaScript do Bootstrap -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <!-- ... Início Formulário ... -->
+    <div class="d-flex justify-content-center">
+      <div class="login">
+        <form id="reservaForm">
+          <div class="form-group">
+            <label for="nome">Nome</label>
+            <input type="text" class="form-control" id="nome" placeholder="Digite seu nome" required>
+          </div>
+          <div class="form-group">
+            <label for="telefone">Telefone</label>
+            <input type="text" class="form-control" id="telefone" placeholder="Digite seu telefone" required>
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" class="form-control" id="email" placeholder="Digite seu e-mail" required>
+          </div>
+          <div class="form-group">
+            <label for="confirmaemail">Confirme seu E-mail</label>
+            <input type="email" class="form-control" id="confirmaemail" placeholder="Digite seu e-mail" required>
+          </div>
+          <div class="form-group">
+            <label for="senha">Senha</label>
+            <div class="input-group">
+              <input type="password" class="form-control" id="senha" placeholder="Digite sua senha" required>
+              <div class="input-group-append">
+                <button class="btn btn-outline-secondary" type="button" id="mostrarSenhaBtn">
+                  <i class="fas fa-eye"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="confirmasenha">Confirme sua Senha</label>
+            <div class="input-group">
+              <input type="password" class="form-control" id="confirmasenha" placeholder="Digite sua senha" required>
+              <div class="input-group-append">
+                <button class="btn btn-outline-secondary" type="button" id="mostrarConfirmSenhaBtn">
+                  <i class="fas fa-eye"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="text-center">
+            <button type="submit" class="btn">Continuar</button>
+          </div>
+          <p>Ao iniciar sessão numa conta, concorda com os nossos Termos e Condições e com a Declaração de Privacidade.</p>
+        </form>
+      </div>
+    </div>
+    <!-- ... Fim Formulário ... -->
 
+    <script>
+      // Função para alternar a visibilidade da senha
+      function alternarVisibilidadeSenha(inputId, buttonId) {
+        var input = document.getElementById(inputId);
+        var button = document.getElementById(buttonId);
 
+        if (input.type === "password") {
+          input.type = "text";
+          button.innerHTML = '<i class="fas fa-eye-slash"></i>';
+        } else {
+          input.type = "password";
+          button.innerHTML = '<i class="fas fa-eye"></i>';
+        }
+      }
+
+      document.getElementById("reservaForm").addEventListener("submit", function(event) {
+        event.preventDefault(); // Impede o envio do formulário
+
+        var nome = document.getElementById('nome').value;
+        var telefone = document.getElementById('telefone').value;
+        var email = document.getElementById('email').value;
+        var confirmaEmail = document.getElementById('confirmaemail').value;
+        var senha = document.getElementById('senha').value;
+        var confirmaSenha = document.getElementById('confirmasenha').value;
+
+        if (nome === '' || telefone === '' || email === '' || confirmaEmail === '' || senha === '' || confirmaSenha === '') {
+          alert('Por favor, preencha todos os campos do formulário.');
+          return; // Sai da função sem redirecionar
+        }
+        // Verifica se a quantidade de dígitos inseridos pelo usuário está correta
+        if (telefone.length !== 11) {
+          alert('O número de telefone inserido é inválido. Por favor, insira um número de telefone com DDD.');
+          return; // Sai da função sem redirecionar
+        }
+        // Verifica se a confirmação do e-mail é igual ao e-mail informado
+        if (email !== confirmaEmail) {
+          alert('O e-mail e a confirmação de e-mail não são idênticos. Por favor, insira a mesma conta de e-mail nos dois campos.');
+          return; // Sai da função sem redirecionar
+        }
+        // Verifica se a confirmação da senha é igual a senha informada
+        if (senha !== confirmaSenha) {
+          alert('A senha e a confirmação de senha não são idênticas. Por favor, insira a mesma senha nos dois campos.');
+          return; // Sai da função sem redirecionar
+        }
+
+        // Redireciona para a página reserva.html
+        window.location.href = 'reserva.html'; 
+      });
+
+      // Evento de clique para alternar a visibilidade da senha
+      document.getElementById("mostrarSenhaBtn").addEventListener("click", function() {
+        alternarVisibilidadeSenha("senha", "mostrarSenhaBtn");
+      });
+
+      // Evento de clique para alternar a visibilidade da confirmação da senha
+      document.getElementById("mostrarConfirmSenhaBtn").addEventListener("click", function() {
+        alternarVisibilidadeSenha("confirmasenha", "mostrarConfirmSenhaBtn");
+      });
+    </script>
   </body>
 </html>
+
+
+
+
+
+
 
 
