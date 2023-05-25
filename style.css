@@ -802,6 +802,91 @@
         }
           
 
+        /*Carrossel da página de quartos disponíveis*/
+
+        .carousel {
+            position: relative;
+            width: 400px;
+            height: 400px;
+            overflow: hidden;
+            margin: 0 auto;
+          }
+          
+          .carousel img {
+            width: 100%;
+            height: 100%;
+          }
+          
+          .carousel .slides {
+            display: flex;
+            transition: transform 0.3s ease-in-out;
+          }
+          
+          .carousel .slide {
+            flex: 0 0 100%;
+          }
+          
+          .carousel-navigation {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 250px;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 20px;
+          }
+          
+          .carousel-navigation span {
+            margin: 0 5px;
+            padding: 5px;
+            cursor: pointer;
+          }
+          
+          
+          .carousel-navigation span::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 16px 14px;
+            border-color: transparent transparent transparent #fff;
+          }
+          
+          .carousel-navigation .prev-button::before {
+            border-width: 16px 14px;
+            margin-right: 5px;
+            transform: rotate(180deg);
+          }
+          
+          .carousel-navigation .next-button::before {
+            border-width: 6px 4px;
+            margin-left: 5px;
+          }
+          
+          .carousel-navigation span:focus {
+            outline: none;
+          }
+          
+          .carousel-indicators {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+          }
+          
+          .carousel-indicators button {
+            margin: 0 5px 180px 0;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: #ccc;
+            border: none;
+            cursor: pointer;
+          }
+          
+          .carousel-indicators button.active {
+            background-color: #555;
+          }
 
           
 
