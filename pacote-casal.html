@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="style.css">
      <!-- Adiciona o caminho para a biblioteca do Font Awesome  -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"  />
-    
+    <!-- Adiciona o ícone da janela da página  -->
+    <link rel="icon" href="imagens/logo.png" type="image/x-icon">
 
   </head>
   <body>
@@ -35,20 +36,16 @@
 
                 <div id="menu">
                   <ul id="navegacao">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">História</a></li>
-                    <li><a href="">Imprensa</a></li>
-                    <li><a href="">Gastronomia</a></li>
-                    <li><a href="">Contato</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="historia.html">História</a></li>
+                    <li><a href="gastronomia.html">Gastronomia</a></li>
                   </ul>
-
                 </div>
-
               </div>
             </div>
           </div>
           <!-- fim topo-->
-
+          <!--Início Corpo-->
           <hr>
           <h1>Pacotes</h1>
           <hr>
@@ -62,6 +59,7 @@
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
                     Dicta, qui eum animi itaque suscipit pariatur voluptate exercitationem ipsum nam consequatur culpa eveniet? 
                     Quisquam, omnis numquam totam ea vitae quidem! Laboriosam.</p>
+                    <button type="submit" class="btn-pacote btn-lg">Adquirir pacote </button>
                 </div>
               </div>
               <div class="col-lg-6 col-md-12 col-sm-12">
@@ -70,20 +68,7 @@
                 </div>
               </div>
             </div>
-            
-          
-           
-      
-          <!-- inicio corpo-->
-
-          
-        
-          
-          
-          
-
-  
-    <!-- fim corpo-->
+            <!--Fim Corpo-->
 
           <!-- início footer-->
           <footer>
@@ -92,7 +77,6 @@
                 <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
                 <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
                 <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-                
               </div>
               <div class="row">
                 <div class="col-12">
@@ -102,12 +86,13 @@
             </div>
           </footer>
           
-          
-          
           <!-- fim footer-->
-
-  
-
+          <script>
+            document.querySelector('.btn-pacote').addEventListener('click', function() {
+              window.location.href = 'quartos_casal.html';
+            });
+          </script>
+          
   <!-- Adicionando o jQuery e o JavaScript do Bootstrap -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 

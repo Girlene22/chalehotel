@@ -3,15 +3,15 @@
 <head>
 
     <meta charset="UTF-8">
-    <title>Catálogo de lugares para passeio</title>
+    <title>Reserva - Chalé Hotel</title>
     <!-- Adiciona o link para o arquivo CSS do Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <!-- Adiciona o caminho para o arquivo CSS  -->
     <link rel="stylesheet" href="style.css">
      <!-- Adiciona o caminho para a biblioteca do Font Awesome  -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"  />
-    
-
+     <!-- Adiciona o ícone da janela da página  -->
+     <link rel="icon" href="imagens/logo.png" type="image/x-icon">
   </head>
   <body>
           <!-- inicio topo-->
@@ -39,19 +39,13 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="historia.html">História</a></li>
                     <li><a href="gastronomia.html">Gastronomia</a></li>
-                    <li><a href="">Mais Informações</a></li>
-                    <li><a href="">Contato</a></li>
                   </ul>
-
                 </div>
-
               </div>
             </div>
           </div>
           <!-- fim topo-->
 
-          
-           
 	<style type="text/css">
 		.container {
 			margin-top: 50px;
@@ -59,11 +53,10 @@
 	</style>
 </head>
 <body>
-    <hr>
     <h1>reserva</h1>
     <hr>
 	<div class="container">
-		<form class="form-inline">
+		<form class="form-inline" onsubmit="verificarFormulario(event)">
 			<div class="form-group mx-sm-3 mb-2">
 				<label for="entrada" class="sr-only">Data de Entrada:</label>
 				<input type="date" class="form-control campos-form" id="entrada" placeholder="Dia/Mês/Ano">
@@ -81,7 +74,7 @@
 				<input type="number" class="form-control campos-form" id="criancas" placeholder="Crianças">
 			</div>
 			<button type="submit" class="btn-disponibilidade mb-2">Checar Disponibilidade</button>
-		</form>
+    </form>
 	</div>
     <div class="container">
         <h2 class="text-center texto">Serviços Exclusivos</h2>
@@ -100,8 +93,6 @@
             </div>
         </div>
     </div>
-
-
           <!-- início footer-->
           <footer>
             <div class="container">
@@ -118,12 +109,39 @@
               </div>
             </div>
           </footer>
-          
-          
-          
           <!-- fim footer-->
 
-  
+          <script>
+            function verificarFormulario(event) {
+              event.preventDefault(); // Impede o envio do formulário
+          
+              var entrada = document.getElementById('entrada').value;
+              var saida = document.getElementById('saida').value;
+              var adultos = document.getElementById('adultos').value;
+              var criancas = document.getElementById('criancas').value;
+          
+              if (entrada === '' || saida === '') {
+                alert('Por favor, preencha as datas de check-in e check-out.');
+                return;
+              }
+          
+              var dataAtual = new Date().toISOString().split('T')[0]; // Obtém a data atual
+          
+              if (entrada < dataAtual || saida < dataAtual) {
+                alert('As datas não podem ser no passado. Por favor, selecione datas válidas.');
+                return;
+              }
+          
+              if (adultos === '' || criancas === '') {
+                alert('Por favor, preencha o número de adultos e crianças, se não houver crinças coloque 0.');
+                return;
+              }
+          
+              // Redireciona para a página "quartos_disponiveis.html"
+              window.location.href = "quartos_disponiveis.html";
+            }
+          </script>
+          
 
   <!-- Adicionando o jQuery e o JavaScript do Bootstrap -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

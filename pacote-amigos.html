@@ -2,14 +2,15 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Catálogo de lugares para passeio</title>
+    <title>Pacotes - Chalé Hotel</title>
     <!-- Adiciona o link para o arquivo CSS do Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <!-- Adiciona o caminho para o arquivo CSS  -->
     <link rel="stylesheet" href="style.css">
      <!-- Adiciona o caminho para a biblioteca do Font Awesome  -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"  />
-    
+    <!-- Adiciona o ícone da janela da página  -->
+    <link rel="icon" href="imagens/logo.png" type="image/x-icon">
 
   </head>
   <body>
@@ -35,11 +36,9 @@
 
                 <div id="menu">
                   <ul id="navegacao">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">História</a></li>
-                    <li><a href="">Imprensa</a></li>
-                    <li><a href="">Gastronomia</a></li>
-                    <li><a href="">Contato</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="historia.html">História</a></li>
+                    <li><a href="gastronomia.html">Gastronomia</a></li>
                   </ul>
 
                 </div>
@@ -62,6 +61,7 @@
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
                     Dicta, qui eum animi itaque suscipit pariatur voluptate exercitationem ipsum nam consequatur culpa eveniet? 
                     Quisquam, omnis numquam totam ea vitae quidem! Laboriosam.</p>
+                    <button type="submit" class="btn-pacote btn-lg">Adquirir pacote </button>
                 </div>
               </div>
               <div class="col-lg-6 col-md-12 col-sm-12">
@@ -72,19 +72,6 @@
             </div>
             
           
-           
-      
-          <!-- inicio corpo-->
-
-          
-        
-          
-          
-          
-
-  
-    <!-- fim corpo-->
-
           <!-- início footer-->
           <footer>
             <div class="container">
@@ -102,9 +89,14 @@
             </div>
           </footer>
           
-          
-          
           <!-- fim footer-->
+          <script>
+            document.querySelector('.btn-pacote').addEventListener('click', function() {
+              alert('Pacote adquirido, você ganhou um desconto de 10% no primeiro dia de hospedagem.');
+              window.location.href = 'quartos_disponiveis2.html';
+            });
+          </script>
+          
 
   
 
