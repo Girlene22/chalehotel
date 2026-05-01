@@ -12,7 +12,7 @@ function Cards({
   desc,
   link,
   tipo,
-  price, // 👈 NOVO
+  price,
   variant = "detail",
 }) {
   const navigate = useNavigate();
@@ -83,7 +83,7 @@ function Cards({
                     )}
                   </div>
 
-                  {/* 💰 PREÇO (AGORA NO FINAL DO CARD) */}
+                  {/* PREÇO  NO FINAL DO CARD */}
                   {price && (
                     <div className="flex justify-end mt-4 text-lg font-bold">
                       <span>{price}</span>

@@ -4,7 +4,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Packages from "./pages/Packages";
 import History from "./pages/History";
-import Gastronomy from "./pages/Gastronomy";
+import Rooms from "./components/Rooms";
 import Contact from "./pages/Contact";
 
 // IMPORTA OS DADOS
@@ -35,7 +35,7 @@ function App() {
 
         <Route path="/historia" element={<History />} />
 
-        <Route path="/gastronomia" element={<Gastronomy />} />
+        <Route path="/quartos" element={<Rooms />} />
 
         <Route path="/contato" element={<Contact />} />
       </Routes>

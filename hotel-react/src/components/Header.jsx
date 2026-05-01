@@ -6,7 +6,7 @@ function Header() {
   const links = [
     { name: "Início", path: "/" },
     { name: "História", path: "/historia" },
-    { name: "Gastronomia", path: "/gastronomia" },
+    { name: "Quartos", path: "/quartos" },
     { name: "Contato", path: "/contato" },
   ];
 

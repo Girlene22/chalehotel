@@ -18,6 +18,9 @@ function Button({
   const variants = {
     primary: "bg-ocean-dark text-white hover:bg-ocean",
 
+    secondary:
+      "bg-accent text-white border border-accent hover:bg-white hover:text-accent",
+
     outline:
       "border border-accent text-accent hover:bg-ocean-dark hover:text-white",
 
