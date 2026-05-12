@@ -42,7 +42,7 @@ function Rooms() {
             <img
               src={economico}
               alt="Quarto econômico"
-              className="w-full h-[280px] object-cover rounded-2xl shadow-xl"
+              className="w-full h-70 object-cover rounded-2xl shadow-xl"
             />
 
             <div className="absolute bottom-4 left-1/2 -translate-x-1/2">
@@ -63,7 +63,7 @@ function Rooms() {
             <img
               src={conforto}
               alt="Quarto conforto"
-              className="w-full h-[280px] object-cover rounded-2xl shadow-xl"
+              className="w-full h-70 object-cover rounded-2xl shadow-xl"
             />
 
             <div className="absolute bottom-4 left-1/2 -translate-x-1/2">
@@ -106,7 +106,7 @@ function Rooms() {
             <img
               src={luxo}
               alt="Quarto luxo"
-              className="w-full h-[280px] object-cover rounded-2xl shadow-xl"
+              className="w-full h-70 object-cover rounded-2xl shadow-xl"
             />
 
             <div className="absolute bottom-4 left-1/2 -translate-x-1/2">

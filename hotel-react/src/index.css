@@ -18,6 +18,9 @@
   /* EXTRA (opcional - espuma) */
   --color-foam: #c4e7fcff;
 }
+body {
+  overflow-x: hidden;
+}
 @keyframes wave {
   0% {
     transform: translateX(0);

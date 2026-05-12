@@ -1,16 +1,79 @@
-# React + Vite
+# Chalé Hotel
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Site institucional do **Chalé Hotel**, desenvolvido com React e implantado na Vercel. O projeto apresenta os quartos, pacotes, serviços e informações de contato do hotel, com navegação por rotas, carousel de imagens, integração com WhatsApp e mapa de localização.
 
-Currently, two official plugins are available:
+**[Ver projeto online](https://girlene22.github.io/chalehotel/)**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## Telas
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+| Página   | Descrição                                      |
+| -------- | ---------------------------------------------- |
+| Home     | Hero com carousel, pacotes, serviços e mapa    |
+| Quartos  | Listagem dos quartos disponíveis               |
+| Pacotes  | Casal, Família e Amigos com detalhes e reserva |
+| História | Sobre o hotel                                  |
+| Contato  | Formulário de contato                          |
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Tecnologias
+
+- **React 19** — componentização, estado com `useState`, efeitos com `useEffect` e refs com `useRef`
+- **React Router DOM v7** — roteamento client-side com `Routes`, `Route` e `Link`
+- **Tailwind CSS v4** — estilização utilitária com design responsivo
+- **Vite 8** — bundler e servidor de desenvolvimento
+- **Lucide React** — ícones
+- **React Icons** — ícones complementares
+- **ESLint** — qualidade de código com regras para React Hooks e React Refresh
+
+---
+
+## Funcionalidades
+
+- Carousel de imagens com autoplay, navegação por botões e suporte a drag (mouse)
+- Roteamento por páginas sem recarregamento
+- Cards com efeito flip (frente e verso)
+- Integração com WhatsApp para reservas diretamente pelo site
+- Mapa de localização via Google Maps embed
+- Menu hamburguer responsivo para mobile
+- Layout responsivo para mobile, tablet e desktop
+- Componentes reutilizáveis: `Container`, `Button`, `Cards`, `CardGrid`, `Section`, `SectionTitle`, `Text`
+- Dados centralizados em arquivos de dados separados da UI
+
+---
+
+## Estrutura do projeto
+
+```
+src/
+├── assets/          # Imagens
+├── components/      # Componentes reutilizáveis
+├── data/            # Dados estáticos (pacotes, serviços)
+├── pages/           # Páginas da aplicação
+└── App.jsx          # Roteamento principal
+```
+
+---
+
+## Como rodar localmente
+
+```bash
+# Clone o repositório
+git clone https://github.com/seu-usuario/hotel-react.git
+
+# Instale as dependências
+npm install
+
+# Inicie o servidor de desenvolvimento
+npm run dev
+```
+
+Acesse `http://localhost:5173` no navegador.
+
+---
+
+## Deploy
+
+O projeto está hospedado na **Vercel** com deploy contínuo a partir da branch principal.
