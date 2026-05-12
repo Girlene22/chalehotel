@@ -2,7 +2,7 @@
 
 Site institucional do **Chalé Hotel**, desenvolvido com React e implantado na Vercel. O projeto apresenta os quartos, pacotes, serviços e informações de contato do hotel, com navegação por rotas, carousel de imagens, integração com WhatsApp e mapa de localização.
 
-**[Ver projeto online](https://girlene22.github.io/chalehotel/)**
+**[Ver projeto online]([https://girlene22.github.io/chalehotel/](https://chalehotel-gamma.vercel.app))**
 
 ---
 
